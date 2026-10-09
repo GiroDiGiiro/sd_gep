@@ -56,10 +56,10 @@ class CreateSD(QDialog, Ui_create_sd_form):
             QMessageBox.warning(self, "Warning", message)
             return False
 
-        if not is_local_path(project_path):
-            message = " Merci de choisir un dossier de travail sur votre disque dur"
-            QMessageBox.warning(self, "Warning", message)
-            return False
+        # if not is_local_path(project_path):
+        #     message = " Merci de choisir un dossier de travail sur votre disque dur"
+        #     QMessageBox.warning(self, "Warning", message)
+        #     return False
 
         return True
 

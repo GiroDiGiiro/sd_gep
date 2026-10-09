@@ -12,7 +12,7 @@ from pathlib import Path
 # ----------------------------
 
 # Dossier des sources
-SRC_DIR = Path("ressources")
+SRC_DIR = Path("ressources/raw_ui")
 
 # Dossier de destination
 DST_DIR = Path("form/ui")
