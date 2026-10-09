@@ -1,5 +1,14 @@
 <RCC>
   <qresource prefix="img">
+    <file>img/field_boolean.svg</file>
+    <file>img/field_date.svg</file>
+    <file>img/field_datetime.svg</file>
+    <file>img/field_double.svg</file>
+    <file>img/field_integer.svg</file>
+    <file>img/field_string.svg</file>
+    <file>img/field_time.svg</file>
+    <file>img/remove.svg</file>
+    <file>img/add.svg</file>
     <file>img/post_canoe.svg</file>
     <file>img/folder.svg</file>
     <file>img/line_layer.svg</file>

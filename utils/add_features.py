@@ -44,9 +44,12 @@ def add_features(features: List[QgsFeature],
 
                 new_feat[field_name] = src_feat[field_name]
 
-            layer.addFeature(new_feat)
+            if not layer.addFeature(new_feat):
+                raise RuntimeError("Échec de l'ajout d'une entité")
 
-        layer.commitChanges()
+        if not layer.commitChanges():
+            raise RuntimeError("Échec de l'enregistrement des modifications")
+
         return True
 
     except Exception as e:

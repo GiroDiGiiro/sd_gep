@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>insert_from_origin_form</class>
+ <widget class="QWidget" name="insert_from_origin_form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>886</width>
+    <height>974</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Insérer des entitées depuis des couches d'origines</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_14">
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Insérer des entitées depuis des couches d'origines&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="">
+      <layout class="QVBoxLayout" name="verticalLayout_13">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QFrame" name="frame_regard">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QCheckBox" name="chk_regard">
+              <property name="text">
+               <string>Peupler la couche regards deupuis une couche d'origine</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>Couche d'origine</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="cb_regard_origin"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tw_regard_origin">
+              <column>
+               <property name="text">
+                <string>Champs d'origine</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Champs de regards à associé</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Ne pas ajouter à &quot;regard&quot;</string>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>7</pointsize>
+                 <italic>true</italic>
+                </font>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QFrame" name="frame_reseau">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QCheckBox" name="chk_reseau">
+              <property name="text">
+               <string>Peupler la couche réseau deupuis une couche d'origine</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Couche d'origine</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="cb_reseau_origin"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tw_reseau_origin">
+              <column>
+               <property name="text">
+                <string>Champs d'origine</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Champs de regards à associé</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Ne pas ajouter à &quot;reseau&quot;</string>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>7</pointsize>
+                 <italic>true</italic>
+                </font>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QFrame" name="frame_ouvrage_polygonal">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QCheckBox" name="chk_ouvrage_polygonal">
+              <property name="text">
+               <string>Peupler la couche ouvrage_polygonal deupuis une couche d'origine</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>Couche d'origine</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="cb_ouvrage_polygonal_origin"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tw_ouvrage_polygonal_origin">
+              <column>
+               <property name="text">
+                <string>Champs d'origine</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Champs de regards à associé</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Ne pas ajouter à &quot;ouvrage_polygona&quot;</string>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>7</pointsize>
+                 <italic>true</italic>
+                </font>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QFrame" name="frame_ssbv">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QCheckBox" name="chk_ssbv">
+              <property name="text">
+               <string>Peupler la couche sousbassin versant deupuis une couche d'origine</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>Couche d'origine</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="cb_ssbv_origin"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tw_ssbv_origin">
+              <column>
+               <property name="text">
+                <string>Champs d'origine</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Champs de regards à associé</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Ne pas ajouter à &quot;sousbassin versant&quot;</string>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>7</pointsize>
+                 <italic>true</italic>
+                </font>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="QFrame" name="frame_bv">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <widget class="QCheckBox" name="chk_bv">
+              <property name="text">
+               <string>Peupler la couche bassin versant deupuis une couche d'origine</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>Couche d'origine</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="cb_bv_origin"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tw_bv_origin">
+              <column>
+               <property name="text">
+                <string>Champs d'origine</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Champs de regards à associé</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Ne pas ajouter à &quot;bassin_versant&quot;</string>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>7</pointsize>
+                 <italic>true</italic>
+                </font>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <item>
+          <widget class="QFrame" name="frame_surface_raccordee">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_12">
+            <item>
+             <widget class="QCheckBox" name="chk_surface_raccordee">
+              <property name="text">
+               <string>Peupler la couche surface_raccordee deupuis une couche d'origine</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QLabel" name="label_7">
+                <property name="text">
+                 <string>Couche d'origine</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="cb_surface_raccordee_origin"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tw_surface_raccordee_origin">
+              <column>
+               <property name="text">
+                <string>Champs d'origine</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Champs de regards à associé</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Ne pas ajouter à &quot;regard&quot;</string>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>7</pointsize>
+                 <italic>true</italic>
+                </font>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTextBrowser" name="textBrowser"/>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pb_cancel">
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pb_ok">
+       <property name="text">
+        <string>Ok</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
