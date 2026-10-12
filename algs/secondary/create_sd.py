@@ -319,4 +319,4 @@ def create_sd(project_name: str, project_path: str | Path, db_name: str, schema_
     # Rafraichir le projet
     iface.addProject(project_path)
 
-    return True, ''
+    return True, f"Création du projet : {project_name} réussi"

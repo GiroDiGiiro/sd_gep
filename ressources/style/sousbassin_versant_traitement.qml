@@ -1,18 +1,18 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis simplifyDrawingTol="1" minScale="100000000" symbologyReferenceScale="-1" simplifyLocal="1" simplifyDrawingHints="1" simplifyAlgorithm="0" version="3.44.9-Solothurn" maxScale="0" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" autoRefreshMode="Disabled" readOnly="0" labelsEnabled="0" simplifyMaxScale="1" styleCategories="AllStyleCategories">
+<qgis styleCategories="AllStyleCategories" autoRefreshMode="Disabled" symbologyReferenceScale="-1" simplifyLocal="1" readOnly="0" simplifyDrawingTol="1" maxScale="0" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" minScale="100000000" simplifyAlgorithm="0" simplifyDrawingHints="1" autoRefreshTime="0" version="3.44.9-Solothurn" simplifyMaxScale="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal startExpression="" fixedDuration="0" limitMode="0" endField="" startField="created_at" endExpression="" accumulate="0" durationUnit="min" enabled="0" mode="0" durationField="fid">
+  <temporal endField="" startField="created_at" fixedDuration="0" accumulate="0" mode="0" endExpression="" limitMode="0" startExpression="" durationUnit="min" enabled="0" durationField="fid">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation type="IndividualFeatures" zoffset="0" zscale="1" extrusionEnabled="0" respectLayerSymbol="1" extrusion="0" binding="Centroid" symbology="Line" showMarkerSymbolInSurfacePlots="0" clamping="Absolute" customToleranceEnabled="1">
+  <elevation clamping="Absolute" respectLayerSymbol="1" symbology="Line" showMarkerSymbolInSurfacePlots="0" extrusionEnabled="0" extrusion="0" customToleranceEnabled="1" binding="Centroid" type="IndividualFeatures" zscale="1" zoffset="0">
     <data-defined-properties>
       <Option type="Map">
         <Option type="QString" name="name" value=""/>
@@ -21,7 +21,7 @@
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol type="line" name="" clip_to_extent="1" alpha="1" is_animated="0" force_rhr="0" frame_rate="10">
+      <symbol is_animated="0" force_rhr="0" frame_rate="10" type="line" alpha="1" clip_to_extent="1" name="">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -29,7 +29,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleLine" pass="0" id="{76fd649c-024e-4596-b10c-ff3014b4cfb4}" enabled="1">
+        <layer id="{76fd649c-024e-4596-b10c-ff3014b4cfb4}" class="SimpleLine" locked="0" enabled="1" pass="0">
           <Option type="Map">
             <Option type="QString" name="align_dash_pattern" value="0"/>
             <Option type="QString" name="capstyle" value="square"/>
@@ -70,7 +70,7 @@
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol type="fill" name="" clip_to_extent="1" alpha="1" is_animated="0" force_rhr="0" frame_rate="10">
+      <symbol is_animated="0" force_rhr="0" frame_rate="10" type="fill" alpha="1" clip_to_extent="1" name="">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -78,7 +78,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" id="{151e03a9-d921-4e5b-966e-7258d8abbbda}" enabled="1">
+        <layer id="{151e03a9-d921-4e5b-966e-7258d8abbbda}" class="SimpleFill" locked="0" enabled="1" pass="0">
           <Option type="Map">
             <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
             <Option type="QString" name="color" value="232,113,141,255,rgb:0.9098039,0.4431373,0.5529412,1"/>
@@ -103,7 +103,7 @@
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol type="marker" name="" clip_to_extent="1" alpha="1" is_animated="0" force_rhr="0" frame_rate="10">
+      <symbol is_animated="0" force_rhr="0" frame_rate="10" type="marker" alpha="1" clip_to_extent="1" name="">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -111,7 +111,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleMarker" pass="0" id="{9eda022e-32a6-4759-805e-5f22c0ccba5a}" enabled="1">
+        <layer id="{9eda022e-32a6-4759-805e-5f22c0ccba5a}" class="SimpleMarker" locked="0" enabled="1" pass="0">
           <Option type="Map">
             <Option type="QString" name="angle" value="0"/>
             <Option type="QString" name="cap_style" value="square"/>
@@ -144,9 +144,9 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 type="singleSymbol" symbollevels="0" referencescale="-1" forceraster="0" enableorderby="0">
+  <renderer-v2 type="singleSymbol" referencescale="-1" enableorderby="0" forceraster="0" symbollevels="0">
     <symbols>
-      <symbol type="fill" name="0" clip_to_extent="1" alpha="0.5" is_animated="0" force_rhr="0" frame_rate="10">
+      <symbol is_animated="0" force_rhr="0" frame_rate="10" type="fill" alpha="0.5" clip_to_extent="1" name="0">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -154,7 +154,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" id="{acaeafd3-5aab-47dd-948c-c54ee1342ebd}" enabled="1">
+        <layer id="{acaeafd3-5aab-47dd-948c-c54ee1342ebd}" class="SimpleFill" locked="0" enabled="1" pass="0">
           <Option type="Map">
             <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
             <Option type="QString" name="color" value="141,90,153,255,rgb:0.5529412,0.3529412,0.6,1"/>
@@ -191,7 +191,7 @@
   <selection mode="Default">
     <selectionColor invalid="1"/>
     <selectionSymbol>
-      <symbol type="fill" name="" clip_to_extent="1" alpha="1" is_animated="0" force_rhr="0" frame_rate="10">
+      <symbol is_animated="0" force_rhr="0" frame_rate="10" type="fill" alpha="1" clip_to_extent="1" name="">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value=""/>
@@ -199,7 +199,7 @@
             <Option type="QString" name="type" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer locked="0" class="SimpleFill" pass="0" id="{09068fc1-519a-4633-ba94-129d65605aa6}" enabled="1">
+        <layer id="{09068fc1-519a-4633-ba94-129d65605aa6}" class="SimpleFill" locked="0" enabled="1" pass="0">
           <Option type="Map">
             <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0"/>
             <Option type="QString" name="color" value="0,0,255,255,rgb:0,0,1,1"/>
@@ -251,7 +251,7 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
     <activeChecks/>
     <checkConfiguration type="Map">
       <Option type="Map" name="QgsGeometryGapCheck">
@@ -263,12 +263,12 @@
   </geometryOptions>
   <legend type="default-vector" showLabelLegend="0"/>
   <referencedLayers>
-    <relation layerName="bassin_versant" layerId="bassin_versant_0ea44192_5cfe_4bed_b645_62d1e0b7d860" referencedLayer="bassin_versant_0ea44192_5cfe_4bed_b645_62d1e0b7d860" strength="Association" providerKey="ogr" name="bv_ssbv" dataSource="./data.gpkg|layername=bassin_versant" id="sousbassin_bv_id_bassin_ver_fid" referencingLayer="sousbassin_versant_f3aeeda9_1e04_4ae7_a63f_1424fde78c1d">
+    <relation providerKey="ogr" layerName="bassin_versant" id="sousbassin_bv_id_bassin_ver_fid" strength="Association" dataSource="./data.gpkg|layername=bassin_versant" referencedLayer="bassin_versant_82b97769_5e86_449b_bfde_ee11c69a9db7" layerId="bassin_versant_82b97769_5e86_449b_bfde_ee11c69a9db7" referencingLayer="sousbassin_versant_ee8c1a31_97d2_4d1c_8f15_990bcab34c9d" name="bv_ssbv">
       <fieldRef referencingField="bv_id" referencedField="fid"/>
     </relation>
   </referencedLayers>
   <referencingLayers>
-    <relation layerName="surface_raccordee" layerId="surface_raccordee_7b7d6ff0_5a1f_44ea_8ef4_687d01b05a84" referencedLayer="sousbassin_versant_f3aeeda9_1e04_4ae7_a63f_1424fde78c1d" strength="Association" providerKey="ogr" name="surface_raccorde_ssbv" dataSource="./data.gpkg|layername=surface_raccordee" id="surface_ra_ssbv_id_sousbassin_fid" referencingLayer="surface_raccordee_7b7d6ff0_5a1f_44ea_8ef4_687d01b05a84">
+    <relation providerKey="ogr" layerName="surface_raccordee" id="surface_ra_ssbv_id_sousbassin_fid" strength="Association" dataSource="./data.gpkg|layername=surface_raccordee" referencedLayer="sousbassin_versant_ee8c1a31_97d2_4d1c_8f15_990bcab34c9d" layerId="surface_raccordee_44825cd8_4c36_4c39_986d_ea5cf1b381f9" referencingLayer="surface_raccordee_44825cd8_4c36_4c39_986d_ea5cf1b381f9" name="surface_raccorde_ssbv">
       <fieldRef referencingField="ssbv_id" referencedField="fid"/>
     </relation>
   </referencingLayers>
@@ -342,6 +342,13 @@
         </config>
       </editWidget>
     </field>
+    <field configurationFlags="NoFlag" name="surface_raccordes_id">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
     <field configurationFlags="NoFlag" name="mode_gestion_id">
       <editWidget type="ValueMap">
         <config>
@@ -390,7 +397,7 @@
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="NoFlag" name="gestionnare">
+    <field configurationFlags="NoFlag" name="gestionnaire">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -424,58 +431,80 @@
         </config>
       </editWidget>
     </field>
+    <field configurationFlags="NoFlag" name="modif_at">
+      <editWidget type="DateTime">
+        <config>
+          <Option type="Map">
+            <Option type="bool" name="allow_null" value="true"/>
+            <Option type="bool" name="calendar_popup" value="true"/>
+            <Option type="QString" name="display_format" value="dd/MM/yyyy"/>
+            <Option type="QString" name="field_format" value="yyyy-MM-dd"/>
+            <Option type="bool" name="field_format_overwrite" value="false"/>
+            <Option type="bool" name="field_iso_format" value="false"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
   </fieldConfiguration>
   <aliases>
-    <alias name="" field="fid" index="0"/>
-    <alias name="Nom" field="nom" index="1"/>
-    <alias name="Nom du bassin versant" field="bv_id" index="2"/>
-    <alias name="Code du regard" field="regard_id" index="3"/>
-    <alias name="Mode de Gestion" field="mode_gestion_id" index="4"/>
-    <alias name="Type d'urbanisation" field="urbanisation_id" index="5"/>
-    <alias name="Commentaire" field="commentaire" index="6"/>
-    <alias name="Commune" field="commune" index="7"/>
-    <alias name="Gestionnaire" field="gestionnare" index="8"/>
-    <alias name="Créé le" field="created_at" index="9"/>
-    <alias name="Source" field="source" index="10"/>
+    <alias field="fid" name="" index="0"/>
+    <alias field="nom" name="Nom" index="1"/>
+    <alias field="bv_id" name="Nom du bassin versant" index="2"/>
+    <alias field="regard_id" name="Code du regard" index="3"/>
+    <alias field="surface_raccordes_id" name="" index="4"/>
+    <alias field="mode_gestion_id" name="Mode de Gestion" index="5"/>
+    <alias field="urbanisation_id" name="Type d'urbanisation" index="6"/>
+    <alias field="commentaire" name="Commentaire" index="7"/>
+    <alias field="commune" name="Commune" index="8"/>
+    <alias field="gestionnaire" name="" index="9"/>
+    <alias field="created_at" name="Créé le" index="10"/>
+    <alias field="source" name="Source" index="11"/>
+    <alias field="modif_at" name="Date de modification" index="12"/>
   </aliases>
   <defaults>
-    <default expression="" field="fid" applyOnUpdate="0"/>
-    <default expression="" field="nom" applyOnUpdate="0"/>
-    <default expression="" field="bv_id" applyOnUpdate="0"/>
-    <default expression="" field="regard_id" applyOnUpdate="0"/>
-    <default expression="" field="mode_gestion_id" applyOnUpdate="0"/>
-    <default expression="" field="urbanisation_id" applyOnUpdate="0"/>
-    <default expression="" field="commentaire" applyOnUpdate="0"/>
-    <default expression="" field="commune" applyOnUpdate="0"/>
-    <default expression="" field="gestionnare" applyOnUpdate="0"/>
-    <default expression="  format_date(  now(),'yyyy-MM-dd')" field="created_at" applyOnUpdate="0"/>
-    <default expression="" field="source" applyOnUpdate="0"/>
+    <default applyOnUpdate="0" field="fid" expression=""/>
+    <default applyOnUpdate="0" field="nom" expression=""/>
+    <default applyOnUpdate="0" field="bv_id" expression=""/>
+    <default applyOnUpdate="0" field="regard_id" expression=""/>
+    <default applyOnUpdate="0" field="surface_raccordes_id" expression=""/>
+    <default applyOnUpdate="0" field="mode_gestion_id" expression=""/>
+    <default applyOnUpdate="0" field="urbanisation_id" expression=""/>
+    <default applyOnUpdate="0" field="commentaire" expression=""/>
+    <default applyOnUpdate="0" field="commune" expression=""/>
+    <default applyOnUpdate="0" field="gestionnaire" expression=""/>
+    <default applyOnUpdate="0" field="created_at" expression="  format_date(  now(),'yyyy-MM-dd')"/>
+    <default applyOnUpdate="0" field="source" expression=""/>
+    <default applyOnUpdate="1" field="modif_at" expression="  format_date(  now(),'yyyy-MM-dd')"/>
   </defaults>
   <constraints>
-    <constraint constraints="3" field="fid" unique_strength="1" notnull_strength="1" exp_strength="0"/>
-    <constraint constraints="0" field="nom" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" field="bv_id" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" field="regard_id" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" field="mode_gestion_id" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" field="urbanisation_id" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" field="commentaire" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" field="commune" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" field="gestionnare" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" field="created_at" unique_strength="0" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" field="source" unique_strength="0" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="1" exp_strength="0" constraints="3" field="fid" notnull_strength="1"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="nom" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="bv_id" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="regard_id" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="surface_raccordes_id" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="mode_gestion_id" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="urbanisation_id" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="commentaire" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="commune" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="gestionnaire" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="created_at" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="source" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="modif_at" notnull_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint desc="" exp="" field="fid"/>
-    <constraint desc="" exp="" field="nom"/>
-    <constraint desc="" exp="" field="bv_id"/>
-    <constraint desc="" exp="" field="regard_id"/>
-    <constraint desc="" exp="" field="mode_gestion_id"/>
-    <constraint desc="" exp="" field="urbanisation_id"/>
-    <constraint desc="" exp="" field="commentaire"/>
-    <constraint desc="" exp="" field="commune"/>
-    <constraint desc="" exp="" field="gestionnare"/>
-    <constraint desc="" exp="" field="created_at"/>
-    <constraint desc="" exp="" field="source"/>
+    <constraint exp="" desc="" field="fid"/>
+    <constraint exp="" desc="" field="nom"/>
+    <constraint exp="" desc="" field="bv_id"/>
+    <constraint exp="" desc="" field="regard_id"/>
+    <constraint exp="" desc="" field="surface_raccordes_id"/>
+    <constraint exp="" desc="" field="mode_gestion_id"/>
+    <constraint exp="" desc="" field="urbanisation_id"/>
+    <constraint exp="" desc="" field="commentaire"/>
+    <constraint exp="" desc="" field="commune"/>
+    <constraint exp="" desc="" field="gestionnaire"/>
+    <constraint exp="" desc="" field="created_at"/>
+    <constraint exp="" desc="" field="source"/>
+    <constraint exp="" desc="" field="modif_at"/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
@@ -483,17 +512,19 @@
   </attributeactions>
   <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
     <columns>
-      <column type="field" name="fid" width="-1" hidden="0"/>
-      <column type="field" name="nom" width="-1" hidden="0"/>
-      <column type="field" name="bv_id" width="-1" hidden="0"/>
-      <column type="field" name="regard_id" width="-1" hidden="0"/>
-      <column type="field" name="mode_gestion_id" width="-1" hidden="0"/>
-      <column type="field" name="commentaire" width="-1" hidden="0"/>
-      <column type="field" name="commune" width="-1" hidden="0"/>
-      <column type="field" name="gestionnare" width="-1" hidden="0"/>
-      <column type="field" name="created_at" width="-1" hidden="0"/>
-      <column type="field" name="source" width="-1" hidden="0"/>
-      <column type="field" name="urbanisation_id" width="-1" hidden="0"/>
+      <column type="field" width="-1" hidden="0" name="fid"/>
+      <column type="field" width="-1" hidden="0" name="nom"/>
+      <column type="field" width="-1" hidden="0" name="bv_id"/>
+      <column type="field" width="-1" hidden="0" name="regard_id"/>
+      <column type="field" width="-1" hidden="0" name="mode_gestion_id"/>
+      <column type="field" width="-1" hidden="0" name="commentaire"/>
+      <column type="field" width="-1" hidden="0" name="commune"/>
+      <column type="field" width="-1" hidden="0" name="created_at"/>
+      <column type="field" width="-1" hidden="0" name="source"/>
+      <column type="field" width="-1" hidden="0" name="urbanisation_id"/>
+      <column type="field" width="-1" hidden="0" name="surface_raccordes_id"/>
+      <column type="field" width="-1" hidden="0" name="gestionnaire"/>
+      <column type="field" width="-1" hidden="0" name="modif_at"/>
       <column type="actions" width="-1" hidden="1"/>
     </columns>
   </attributetableconfig>
@@ -526,46 +557,46 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-      <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+    <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+      <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
     </labelStyle>
-    <attributeEditorContainer type="Tab" showLabel="1" name="Identité" collapsedExpressionEnabled="0" visibilityExpressionEnabled="0" groupBox="0" columnCount="1" collapsed="0" horizontalStretch="0" visibilityExpression="" verticalStretch="0" collapsedExpression="">
-      <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-        <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+    <attributeEditorContainer verticalStretch="0" collapsedExpressionEnabled="0" type="Tab" columnCount="1" collapsed="0" visibilityExpressionEnabled="0" visibilityExpression="" groupBox="0" showLabel="1" name="Identité" horizontalStretch="0" collapsedExpression="">
+      <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+        <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
       </labelStyle>
-      <attributeEditorField showLabel="1" name="nom" horizontalStretch="0" verticalStretch="0" index="1">
-        <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-          <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" name="nom" horizontalStretch="0" index="1">
+        <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+          <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="bv_id" horizontalStretch="0" verticalStretch="0" index="2">
-        <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-          <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" name="bv_id" horizontalStretch="0" index="2">
+        <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+          <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="regard_id" horizontalStretch="0" verticalStretch="0" index="3">
-        <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-          <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" name="regard_id" horizontalStretch="0" index="3">
+        <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+          <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="mode_gestion_id" horizontalStretch="0" verticalStretch="0" index="4">
-        <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-          <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" name="mode_gestion_id" horizontalStretch="0" index="5">
+        <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+          <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="urbanisation_id" horizontalStretch="0" verticalStretch="0" index="5">
-        <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-          <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" name="urbanisation_id" horizontalStretch="0" index="6">
+        <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+          <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer type="Tab" showLabel="1" name="Surface Raccordee" collapsedExpressionEnabled="0" visibilityExpressionEnabled="0" groupBox="0" columnCount="1" collapsed="0" horizontalStretch="0" visibilityExpression="" verticalStretch="0" collapsedExpression="">
-      <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-        <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+    <attributeEditorContainer verticalStretch="0" collapsedExpressionEnabled="0" type="Tab" columnCount="1" collapsed="0" visibilityExpressionEnabled="0" visibilityExpression="" groupBox="0" showLabel="1" name="Surface Raccordee" horizontalStretch="0" collapsedExpression="">
+      <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+        <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
       </labelStyle>
-      <attributeEditorRelation showLabel="1" name="surface_ra_ssbv_id_sousbassin_fid" relation="surface_ra_ssbv_id_sousbassin_fid" forceSuppressFormPopup="0" nmRelationId="" label="Surface Raccordee" relationWidgetTypeId="relation_editor" horizontalStretch="0" verticalStretch="0">
-        <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-          <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+      <attributeEditorRelation forceSuppressFormPopup="0" nmRelationId="" verticalStretch="0" relationWidgetTypeId="relation_editor" showLabel="1" relation="surface_ra_ssbv_id_sousbassin_fid" name="surface_ra_ssbv_id_sousbassin_fid" horizontalStretch="0" label="Surface Raccordee">
+        <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+          <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
         </labelStyle>
         <editor_configuration type="Map">
           <Option type="bool" name="allow_add_child_feature_with_no_geometry" value="false"/>
@@ -575,33 +606,38 @@ def my_form_open(dialog, layer, feature):
         </editor_configuration>
       </attributeEditorRelation>
     </attributeEditorContainer>
-    <attributeEditorContainer type="Tab" showLabel="1" name="Autre" collapsedExpressionEnabled="0" visibilityExpressionEnabled="0" groupBox="0" columnCount="1" collapsed="0" horizontalStretch="0" visibilityExpression="" verticalStretch="0" collapsedExpression="">
-      <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-        <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+    <attributeEditorContainer verticalStretch="0" collapsedExpressionEnabled="0" type="Tab" columnCount="1" collapsed="0" visibilityExpressionEnabled="0" visibilityExpression="" groupBox="0" showLabel="1" name="Autre" horizontalStretch="0" collapsedExpression="">
+      <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+        <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
       </labelStyle>
-      <attributeEditorField showLabel="1" name="commentaire" horizontalStretch="0" verticalStretch="0" index="6">
-        <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-          <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" name="commentaire" horizontalStretch="0" index="7">
+        <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+          <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="commune" horizontalStretch="0" verticalStretch="0" index="7">
-        <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-          <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" name="commune" horizontalStretch="0" index="8">
+        <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+          <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="gestionnare" horizontalStretch="0" verticalStretch="0" index="8">
-        <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-          <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" name="gestionnaire" horizontalStretch="0" index="9">
+        <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+          <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="created_at" horizontalStretch="0" verticalStretch="0" index="9">
-        <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-          <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" name="created_at" horizontalStretch="0" index="10">
+        <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+          <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="source" horizontalStretch="0" verticalStretch="0" index="10">
-        <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
-          <labelFont description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" style="" italic="0" underline="0" strikethrough="0" bold="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" name="modif_at" horizontalStretch="0" index="12">
+        <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+          <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField verticalStretch="0" showLabel="1" name="source" horizontalStretch="0" index="11">
+        <labelStyle labelColor="" overrideLabelFont="0" overrideLabelColor="0">
+          <labelFont underline="0" strikethrough="0" style="" italic="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
@@ -613,8 +649,10 @@ def my_form_open(dialog, layer, feature):
     <field name="commune" editable="1"/>
     <field name="created_at" editable="1"/>
     <field name="fid" editable="1"/>
+    <field name="gestionnaire" editable="1"/>
     <field name="gestionnare" editable="1"/>
     <field name="mode_gestion_id" editable="1"/>
+    <field name="modif_at" editable="0"/>
     <field name="nom" editable="1"/>
     <field name="regard_code" editable="0"/>
     <field name="regard_id" editable="1"/>
@@ -630,8 +668,10 @@ def my_form_open(dialog, layer, feature):
     <field name="commune" labelOnTop="0"/>
     <field name="created_at" labelOnTop="0"/>
     <field name="fid" labelOnTop="0"/>
+    <field name="gestionnaire" labelOnTop="0"/>
     <field name="gestionnare" labelOnTop="0"/>
     <field name="mode_gestion_id" labelOnTop="0"/>
+    <field name="modif_at" labelOnTop="0"/>
     <field name="nom" labelOnTop="0"/>
     <field name="regard_code" labelOnTop="0"/>
     <field name="regard_id" labelOnTop="0"/>
@@ -647,8 +687,10 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="commune"/>
     <field reuseLastValue="0" name="created_at"/>
     <field reuseLastValue="0" name="fid"/>
+    <field reuseLastValue="0" name="gestionnaire"/>
     <field reuseLastValue="0" name="gestionnare"/>
     <field reuseLastValue="0" name="mode_gestion_id"/>
+    <field reuseLastValue="0" name="modif_at"/>
     <field reuseLastValue="0" name="nom"/>
     <field reuseLastValue="0" name="regard_code"/>
     <field reuseLastValue="0" name="regard_id"/>
