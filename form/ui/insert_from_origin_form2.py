@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ressources\insert_from_origin_form2.ui'
+# Form implementation generated from reading ui file 'ressources\raw_ui\insert_from_origin_form2.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #

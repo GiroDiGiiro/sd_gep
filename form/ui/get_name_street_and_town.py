@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ressources\get_name_street_and_town.ui'
+# Form implementation generated from reading ui file 'ressources\raw_ui\get_name_street_and_town.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #

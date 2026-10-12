@@ -89,11 +89,10 @@ class AddGestionnaireToEntities(QDialog, Ui_add_gestionnaire_form):
         succes, msg = add_gestionnaire_to_entities(self.le_gestionnaire.text(),self.le_gestionnaire_field.text(), layers_dict)
         if succes:
             QMessageBox.information(self, "Succès", msg)
+            self.accept()
         else:
             QMessageBox.critical(self, "Erreur", msg)
-        self.close()
-
-        self.close()
+            self.reject()
 
     def _on_cancel(self) -> None:
         """Ferme la boîte de dialogue sans lancer de traitement."""

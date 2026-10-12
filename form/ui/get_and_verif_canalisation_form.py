@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ressources\get_and_verif_canalisation_form.ui'
+# Form implementation generated from reading ui file 'ressources\raw_ui\get_and_verif_canalisation_form.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #

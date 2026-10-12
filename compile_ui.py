@@ -12,7 +12,8 @@ from pathlib import Path
 # ----------------------------
 
 # Dossier des sources
-SRC_DIR = Path("ressources/raw_ui")
+SRC_DIR_UI = Path("ressources/raw_ui")
+SRC_DIR_QRC = Path("ressources")
 
 # Dossier de destination
 DST_DIR = Path("form/ui")
@@ -67,12 +68,12 @@ def main():
         return
 
     if args.action in ["all", "ui"]:
-        ui_files = list(SRC_DIR.rglob("*.ui"))
+        ui_files = list(SRC_DIR_UI.rglob("*.ui"))
         for ui in ui_files:
             compile_ui(ui, DST_DIR)
 
     if args.action in ["all", "resources"]:
-        qrc_files = list(SRC_DIR.glob("*.qrc"))
+        qrc_files = list(SRC_DIR_QRC.glob("*.qrc"))
         for qrc in qrc_files:
             compile_qrc(qrc, DST_DIR)
 

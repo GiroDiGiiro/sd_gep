@@ -112,9 +112,10 @@ class GenerateSsbvName(QDialog, Ui_generate_ssbv_name):
 
         if succes:
             QMessageBox.information(self, "Succès", msg)
+            self.accept()
         else:
             QMessageBox.critical(self, "Erreur", msg)
-        self.close()
+            self.reject()
 
     def _on_cancel(self):
         self.close()

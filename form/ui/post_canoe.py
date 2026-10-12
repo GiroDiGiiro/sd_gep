@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ressources\post_canoe.ui'
+# Form implementation generated from reading ui file 'ressources\raw_ui\post_canoe.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #

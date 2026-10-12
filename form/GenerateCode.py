@@ -103,9 +103,10 @@ class GenerateCode(QDialog, Ui_generate_code):
 
         if succes:
             QMessageBox.information(self, "Succès", msg)
+            self.accept()
         else:
             QMessageBox.critical(self, "Erreur", msg)
-        self.close()
+            self.reject()
 
     def _on_cancel(self) -> None:
         """Ferme la boîte de dialogue sans lancer de traitement."""

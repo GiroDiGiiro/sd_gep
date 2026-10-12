@@ -104,7 +104,7 @@ class GetAndVerifCanalisation(QDialog, Ui_get_and_verif_canalisation_form):
 
         msg = f'{len(errors)} erreurs trouvées sur la couche {line_layer.name()}' if errors else 'Aucune erreur trouvée. Bravo !'
         QMessageBox.information(self, "Info", msg)
-        self.close()
+        self.accept()
 
     def _on_cancel(self):
         self.close()
