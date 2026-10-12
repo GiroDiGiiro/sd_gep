@@ -222,8 +222,7 @@ class TerrainToBureau(QDialog):
         la fermeture de la fenêtre de progression.
 
         Contrat avec les formulaires : ``accept()`` après avoir lancé le
-        traitement, ``reject()`` pour annuler (jamais ``close()``, qui
-        équivaut à ``reject()``).
+        traitement, ``reject()`` pour annuler .
 
         Returns:
             ``False`` si le formulaire est annulé ou si la tâche échoue,
