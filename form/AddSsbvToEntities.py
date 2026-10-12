@@ -108,12 +108,13 @@ class AddSsbvToEntities(QDialog, Ui_add_ssbv_form):
         layers_dict = self.get_layers_dict()
         ssbv_layer = QgsProject.instance().mapLayer(self.cb_ssbv_layer.currentData())
         task = AddSsbvToEntitiesTask(ssbv_layer=ssbv_layer,field_name_ssbv=self.le_ssbv_field.text(),info=layers_dict)
-        self.interface.gep_sd_task = task  # référence forte persistante
-        self.interface.gep_sd_progress = ProgressDialog(task=task, parent=self.interface.mainWindow(), show_subprogressbar=True)
+        self.interface.gep_sd_task = task
+        dlg = ProgressDialog(task=task, parent=self.interface.mainWindow(), show_subprogressbar=True)
+        self.interface.gep_sd_progress = dlg
         QgsApplication.taskManager().addTask(task)
-        self.interface.gep_sd_progress.show()
-        self.close()
+        dlg.show()
+        self.accept()
 
     def _on_cancel(self) -> None:
         """Ferme la boîte de dialogue sans lancer de traitement."""
-        self.close()
+        self.reject()

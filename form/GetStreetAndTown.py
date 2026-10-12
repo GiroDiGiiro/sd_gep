@@ -93,10 +93,13 @@ class GetStreetAndTown(QDialog, Ui_get_name_street_and_town):
                                          field_name_rue, field_name_rue2, field_name_commune,
                                          url_rue, url_commune)
         self.interface.gep_sd_task = task  # référence forte persistante
-        self.interface.gep_sd_progress = ProgressDialog(task=task, parent=self.interface.mainWindow(), show_subprogressbar=True)
+        self.interface.gep_sd_task = task
+        dlg = ProgressDialog(task=task, parent=self.interface.mainWindow(), show_subprogressbar=True)
+        self.interface.gep_sd_progress = dlg
         QgsApplication.taskManager().addTask(task)
-        self.interface.gep_sd_progress.show()
-        self.close()
+        dlg.show()
+        self.accept()
 
     def _on_cancel(self) -> None:
-        self.close()
+        """Ferme la boîte de dialogue sans lancer de traitement."""
+        self.reject()
