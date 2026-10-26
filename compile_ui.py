@@ -59,7 +59,7 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(description="Compile .ui and .qrc files for QGIS plugin.")
-    parser.add_argument("action", nargs="?", default="all", choices=["all", "ui", "resources", "clean"],
+    parser.add_argument("action", nargs="?", default="all", choices=["all", "ui", "ressources", "clean"],
                         help="Action à exécuter (default: all)")
     args = parser.parse_args()
 
@@ -72,7 +72,7 @@ def main():
         for ui in ui_files:
             compile_ui(ui, DST_DIR)
 
-    if args.action in ["all", "resources"]:
+    if args.action in ["all", "ressources"]:
         qrc_files = list(SRC_DIR_QRC.glob("*.qrc"))
         for qrc in qrc_files:
             compile_qrc(qrc, DST_DIR)

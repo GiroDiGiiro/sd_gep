@@ -25,59 +25,59 @@ class GepSDPlugin:
     def initGui(self):
         # Création des actions
         # Créer un projet
-        self.create_sd = QAction(QIcon(":/img/img/icon.svg"), u"Créer un Schéma Directeur", self.interface.mainWindow())
+        self.create_sd = QAction(QIcon(":/img/img/ActionNewSDEP.svg"), u"Créer un Schéma Directeur", self.interface.mainWindow())
         self.create_sd.triggered.connect(self.on_click_create_sd)
 
         # Insérer des entitiées depuis une couche d'origine
-        self.insert_from_origin = QAction(QIcon(":/img/img/icon.svg"), u"Insérer des entitées depuis une couche",
+        self.insert_from_origin = QAction(QIcon(":/img/img/ActionInsertFromOrigin2.svg"), u"Insérer des entitées depuis une couche",
                                          self.interface.mainWindow())
         self.insert_from_origin.triggered.connect(self.on_click_insert_from_origin)
 
         # générer les codes d'identification
-        self.generate_code = QAction(QIcon(":/img/img/icon.svg"), u"Générer les Codes d'identifications",
+        self.generate_code = QAction(QIcon(":/img/img/ActionGeneric.svg"), u"Générer les Codes d'identifications",
                                      self.interface.mainWindow())
         self.generate_code.triggered.connect(self.on_generate_code)
 
         # Vérifier les canalisations et associer les regards
-        self.get_and_verif_canalisation = QAction(QIcon(":/img/img/icon.svg"), u"Vérifier les canalisations",
+        self.get_and_verif_canalisation = QAction(QIcon(":/img/img/ActionGeneric.svg"), u"Vérifier les canalisations",
                                                   self.interface.mainWindow())
         self.get_and_verif_canalisation.triggered.connect(self.on_click_get_and_verif_canalisation)
 
         # Généré les nom des SSBV
-        self.generate_ssbv_name = QAction(QIcon(":/img/img/icon.svg"), u"Générer les noms des sous bassins versant",
+        self.generate_ssbv_name = QAction(QIcon(":/img/img/ActionGeneric.svg"), u"Générer les noms des sous bassins versant",
                                             self.interface.mainWindow())
         self.generate_ssbv_name.triggered.connect(self.on_click_generate_ssbv_name)
 
 
         # Associer les Bassins Versant
-        self.add_bv_to_entities = QAction(QIcon(":/img/img/icon.svg"), u"Associer les Bassins Versant aux entitées",
+        self.add_bv_to_entities = QAction(QIcon(":/img/img/ActionGeneric.svg"), u"Associer les Bassins Versant aux entitées",
                                             self.interface.mainWindow())
         self.add_bv_to_entities.triggered.connect(self.on_click_add_bv_to_entities)
 
         # Associer les Sous Bassins Versant
-        self.add_ssbv_to_entities = QAction(QIcon(":/img/img/icon.svg"), u"Associer les Sous Bassins Versant aux entitées",
+        self.add_ssbv_to_entities = QAction(QIcon(":/img/img/ActionGeneric.svg"), u"Associer les Sous Bassins Versant aux entitées",
                                             self.interface.mainWindow())
         self.add_ssbv_to_entities.triggered.connect(self.on_click_add_ssbv_to_entities)
 
         # Ajouter le nom des rues et le code insee
-        self.get_street_and_town = QAction(QIcon(":/img/img/icon.svg"), u"Récupérer le nom des rues et des communes",
+        self.get_street_and_town = QAction(QIcon(":/img/img/ActionGeneric.svg"), u"Récupérer le nom des rues et des communes",
                                            self.interface.mainWindow())
         self.get_street_and_town.triggered.connect(self.on_click_get_street_and_town)
 
         # Ajouter le nom des gestionnaires aux entitées
-        self.add_gestionnaire_to_entities = QAction(QIcon(":/img/img/icon.svg"),
+        self.add_gestionnaire_to_entities = QAction(QIcon(":/img/img/ActionGeneric.svg"),
                                                     u"Ajouter le gestionnaires aux entitées du projets",
                                                     self.interface.mainWindow())
         self.add_gestionnaire_to_entities.triggered.connect(self.on_click_add_gestionnaire_to_entities)
 
         # Ajouter le nom de la source aux entitées
-        self.add_source_to_entities = QAction(QIcon(":/img/img/icon.svg"),
+        self.add_source_to_entities = QAction(QIcon(":/img/img/ActionGeneric2.svg"),
                                               u"Ajouter le sources aux entitées du projets",
                                               self.interface.mainWindow())
         self.add_source_to_entities.triggered.connect(self.on_click_add_source_to_entities)
 
         #Traitement par lot post terrain
-        self.terrain_to_bureau = QAction(QIcon(":/img/img/icon.svg"),
+        self.terrain_to_bureau = QAction(QIcon(":/img/img/ActionTerrainToBureau.svg"),
                                          u"Lancer les traitements Terrain -> Bureau",
                                          self.interface.mainWindow())
         self.terrain_to_bureau.triggered.connect(self.on_click_terrain_to_bureau)
@@ -89,8 +89,8 @@ class GepSDPlugin:
         # Ajouter les autres actions ici
 
         # Création menu du plugin pour ouvrir les dialogs
-        self.menu = QMenu(u"Unima[GEP] - Schema Directeur")  # Ajouté Le nom du plugin
-        self.menu.setIcon(QIcon(":/img/img/geopal_to_unima.svg"))
+        self.menu = QMenu(u"Unima[GEP] - Schema Directeur Eaux Pluviales")  # Ajouté Le nom du plugin
+        self.menu.setIcon(QIcon(":/img/img/icon.svg"))
         self.menu.addAction(self.create_sd)
         self.menu.addAction(self.insert_from_origin)
         self.menu.addAction(self.terrain_to_bureau)
@@ -98,7 +98,7 @@ class GepSDPlugin:
 
         # Ajouter sous menu ici
         self.menu_post_terrain = QMenu("Terrain -> Bureau")
-        self.menu_post_terrain.setIcon(QIcon(":/img/img/icon.svg"))
+        self.menu_post_terrain.setIcon(QIcon(":/img/img/ActionTerrainToBureau.svg"))
         self.menu_post_terrain.addAction(self.generate_code)
         self.menu_post_terrain.addAction(self.generate_ssbv_name)
         self.menu_post_terrain.addAction(self.add_bv_to_entities)
@@ -116,6 +116,7 @@ class GepSDPlugin:
         self.toolbar = self.interface.addToolBar(u"GepSDPlugin")  # Ajouté Le nom du plugin
         self.toolbar.setObjectName("Toolbar_GepSDPlugin")  # Ajouté Le nom du plugin
         self.toolbar.addAction(self.create_sd)
+        self.toolbar.addAction(self.insert_from_origin)
         self.toolbar.addAction(self.terrain_to_bureau)
         self.toolbar.addAction(self.post_canoe)
         # Ajouter les autres actions ici

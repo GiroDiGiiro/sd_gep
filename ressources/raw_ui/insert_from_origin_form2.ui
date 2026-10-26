@@ -6,12 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>623</width>
-    <height>446</height>
+    <width>619</width>
+    <height>437</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Insérer des entitées depuis des couches d'origines</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../ressources.qrc">
+    <normaloff>:/img/img/ActionInsertFromOrigin2.svg</normaloff>:/img/img/ActionInsertFromOrigin2.svg</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -39,7 +43,7 @@
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
-         <widget class="QWidget" name="">
+         <widget class="QWidget" name="layoutWidget">
           <layout class="QHBoxLayout" name="horizontalLayout_3">
            <item>
             <widget class="QTableWidget" name="tw_paired_layer">
@@ -276,7 +280,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="ressources.qrc"/>
+  <include location="../ressources.qrc"/>
  </resources>
  <connections/>
 </ui>

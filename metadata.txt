@@ -7,7 +7,7 @@
 # This file should be included when you package your plugin.# Mandatory items:
 
 [general]
-name= GEP - Schema Directeur
+name= GEP - Schema Directeur Eaux Pluviales
 qgisMinimumVersion=2.6
 qgisMaximumVersion=3.99
 description= Extension pour la création de schémas directeur de la cellule GEP
