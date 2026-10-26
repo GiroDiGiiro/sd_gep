@@ -74,7 +74,7 @@ class CreateSD(QDialog, Ui_create_sd_form):
 
         success, msg = create_sd(project_name, project_path,db_name,schema_name)
 
-        if succes:
+        if success:
             QMessageBox.information(self, "Succès", msg)
             self.accept()
         else:
